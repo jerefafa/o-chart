@@ -121,6 +121,41 @@
           }
         }
       }
+    },
+    "ng-o-chart": {
+      "root": "projects/ng-o-chart",
+      "sourceRoot": "projects/ng-o-chart/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ng-o-chart/tsconfig.lib.json",
+            "project": "projects/ng-o-chart/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-o-chart/src/test.ts",
+            "tsConfig": "projects/ng-o-chart/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-o-chart/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng-o-chart/tsconfig.lib.json",
+              "projects/ng-o-chart/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "o-chart"
