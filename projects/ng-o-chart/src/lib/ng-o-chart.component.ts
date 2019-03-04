@@ -1,5 +1,6 @@
-import { Employee } from './../models/employee.model.d';
 import { Component, OnInit, Input } from '@angular/core';
+
+import { Employee } from '../models/employee.model';
 
 @Component({
   selector: 'lib-ng-o-chart',
@@ -10,7 +11,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styles: []
 })
 export class NgOChartComponent implements OnInit {
-  @Input() employee: Employee[];
+  @Input() employee: Employee;
 
   constructor() { }
 
