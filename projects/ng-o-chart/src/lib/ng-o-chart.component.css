@@ -1,0 +1,25 @@
+.container {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+img {
+    width: 75px;
+    height: 75px;
+}
+
+.heading {
+    width: 100%;
+    background-color: darkblue;
+    text-align: center;
+    color: white;
+}
+
+.main-content {
+    width: 300px;
+    height: max-content;
+    border: 1px solid black;
+}
+
+.image-container {
+    float: left;
+}
